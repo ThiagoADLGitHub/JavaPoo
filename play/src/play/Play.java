@@ -15,6 +15,17 @@ public class Play {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        //Primeiro objeto
+        Caneta c1 = new Caneta();
+        c1.cor="Azul";
+        c1.ponta=1.5f;
+        c1.tampar();
+        c1.status();
+        c1.rabiscar();
+        //Segundo objeto
+        Caneta c2 = new Caneta();
+        c2.destampar();
+        c2.rabiscar();
     }
     
 }

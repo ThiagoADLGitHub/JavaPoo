@@ -9,12 +9,30 @@ package play;
  * @author thiag
  */
 public class Caneta {
-    
+    //declaração de atributos
     public String modelo;
     public String cor;
-    float ponta;
-    int carga;
-    boolean tampada;
+    public float ponta;
+    public int carga;
+    public boolean tampada;
+    //fim Atributos
+    //Metudos
+    void status(){
+        System.out.print("cor da caneta é:"+this.cor +" ");
+    }
+    void rabiscar(){
+        if(this.tampada==true){
+            System.out.println("Não posso rabiscar");
+        }else{
+            System.out.print("estou rabiscando");
+        }
+    }
+    void tampar(){
+        this.tampada= true;
+    }
+    void destampar(){
+        this.tampada= false;
+    }
     
     
 }
